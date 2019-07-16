@@ -1,0 +1,8 @@
+package figuren;
+
+public class Rechteck extends Figur {
+
+    Rechteck(){
+        super("Rechteck anzeigen");
+    }
+}
