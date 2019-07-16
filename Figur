@@ -1,0 +1,17 @@
+package figuren;
+
+abstract class Figur {
+    private String figurename;
+
+    Figur(String figurename) {
+        this.figurename = figurename;
+    }
+
+    void anzeigen() {
+        System.out.println(figurename+"anzeigen");
+    }
+    @Override
+    public String toString() {
+      return figurename;
+    }
+}
