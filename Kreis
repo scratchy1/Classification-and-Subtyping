@@ -1,0 +1,9 @@
+package figuren;
+
+public class Kreis extends Figur {
+
+    Kreis(){
+        super("Kreis anzeigen");
+    }
+    
+}
