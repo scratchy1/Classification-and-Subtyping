@@ -1,0 +1,33 @@
+package figuren;
+
+import java.util.*;
+
+public class FigurenListe {
+    private java.util.LinkedList<Figur> figurenListe;
+    private int size = 0;
+
+    public FigurenListe() {
+        figurenListe = new java.util.LinkedList<Figur>();
+    }
+
+    public void figurAnfuegen(Figur figur) {
+        figurenListe.addLast(figur);
+        size++;
+    }
+
+    public Figur letzteFigurAuslesen() throws NoSuchElementException {
+        if(size==0) throw new NoSuchElementException("Liste leer");
+        System.out.println(figurenListe.getLast());
+        return figurenListe.getLast();
+    }
+
+    public void alleAnzeigen() throws NoSuchElementException{
+        if(size==0) throw new NoSuchElementException("Liste leer");
+        for (int i = 0; i < size; i++) {
+            System.out.println(figurenListe.get(i));
+        }
+    }
+    
+}
+
+    
