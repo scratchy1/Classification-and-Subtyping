@@ -1,0 +1,31 @@
+public class Kreis implements Figur {
+// Deklaration der Instanzdaten wie
+// Kreismittelpunkt und Radius
+public void anzeigen () {
+System.out.println( "Kreis anzeigen");
+}
+}
+public class Rechteck implements Figur {
+// Deklaration der Instanzdaten wie
+// linke obere Ecke, Breite, Hoehe
+public void anzeigen () {
+System.out.println( "Rechteck anzeigen");
+}
+}
+public class FigurenListe {
+private java.util.LinkedList<Figur> figurenListe;
+public FigurenListe() {
+figurenListe = new java.util.LinkedList<Figur>();
+}
+public void figurAnfuegen (Figur figur) {
+figurenListe.addLast(figur);
+}
+public Figur letzteFigurAuslesen() {
+return figurenListe.getLast();
+}
+public void alleAnzeigen() {
+for (Figur figur : figurenListe) {
+figur.anzeigen();
+}
+}
+}
