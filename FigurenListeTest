@@ -1,0 +1,17 @@
+package figuren;
+
+public class FigurenListeTest {
+
+    public static void main(String[] args) {
+        FigurenListe figurlist = new FigurenListe();
+        //figurlist.letzteFigurAuslesen();
+        //figurlist.alleAnzeigen();
+        Figur kreis = new Kreis();
+        figurlist.figurAnfuegen(kreis);
+        Figur rechteck = new Rechteck();
+        figurlist.figurAnfuegen(rechteck);
+        figurlist.letzteFigurAuslesen();
+        figurlist.alleAnzeigen();
+    }
+
+}
